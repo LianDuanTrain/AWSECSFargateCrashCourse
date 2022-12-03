@@ -6,14 +6,7 @@
 - **<h3>✒️ Easy Add Linux Parameters in Target Task Definition</h3>**
 - **<h3>✒️ How to Enable Remote Debug in Fargate Service Container?</h3>**  
 - **<h3>✒️ How to Remote Debug Fargate Service Container in Local Dev Env?</h3>**
-      
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>         
+             
 📌 
 
 ## **📃How to Create an ECS Remote Debug Policy？**
@@ -36,22 +29,12 @@ Policy Name: ECSRemoteDebug
     ]
 }
 ```
-<br>         
+        
 📌 
 
 ## **✏️How to Attach the Debug Policy to ECS Task Execution Role?**   
   - <div id="wrapper-div" style="box-shadow: 0px 2px 25px rgba(0, 0, 0, .25); "><image src='./images/addRole.jpg'  width="80%"> </div>
-<br>
-<br>
-<br>
-<br> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>         
+        
 📌   
 
 ## **🎯Easy Add Linux Parameters in Target Task Definition** 
@@ -64,18 +47,7 @@ Policy Name: ECSRemoteDebug
 ```
 
 - Use the  Task Definition to Create a Fargate Service
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> 
-<br>
-<br>
-<br>
-<br>
-<br>        
+       
 📌
 
 
@@ -87,18 +59,7 @@ aws ecs update-service  --region "us-east-1" --cluster "DemoFargateCluster" --se
 ```
 📘[AWS Document: update-service](https://awscli.amazonaws.com/v2/documentation/api/2.8.6/reference/ecs/update-service.html)
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> 
-<br>
-<br>
-<br>
-<br>         
+       
 📌
 
 ## **🏆How to Remote Debug Fargate Service Container in Local Dev Env?**
