@@ -1,0 +1,148 @@
+{
+"ipcMode": null,
+"executionRoleArn": "arn:aws:iam::475322830297:role/ecsTaskExecutionRole",
+"containerDefinitions": [
+  {
+    "dnsSearchDomains": null,
+    "environmentFiles": null,
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "secretOptions": null,
+      "options": {
+        "awslogs-group": "/ecs/SpringbootDemoTask",
+        "awslogs-region": "us-east-2",
+        "awslogs-stream-prefix": "ecs"
+      }
+    },
+    "entryPoint": [],
+    "portMappings": [
+      {
+        "hostPort": 9999,
+        "protocol": "tcp",
+        "containerPort": 9999
+      },
+      {
+        "hostPort": 80,
+        "protocol": "tcp",
+        "containerPort": 80
+      }
+    ],
+    "command": [],
+    "linuxParameters": null,
+    "cpu": 0,
+    "environment": [],
+    "resourceRequirements": null,
+    "ulimits": null,
+    "dnsServers": null,
+    "mountPoints": [],
+    "workingDirectory": null,
+    "secrets": null,
+    "dockerSecurityOptions": null,
+    "memory": null,
+    "memoryReservation": null,
+    "volumesFrom": [],
+    "stopTimeout": null,
+    "image": "lianduantraining/springbootdemo:V11",
+    "startTimeout": null,
+    "firelensConfiguration": null,
+    "dependsOn": null,
+    "disableNetworking": null,
+    "interactive": null,
+    "healthCheck": {
+      "retries": 3,
+      "command": [
+        "CMD-SHELL",
+        "curl -f http://localhost:9999/actuator/health/ping || exit 1"
+      ],
+      "timeout": 20,
+      "interval": 10,
+      "startPeriod": 30
+    },
+    "essential": true,
+    "links": null,
+    "hostname": null,
+    "extraHosts": null,
+    "pseudoTerminal": null,
+    "user": null,
+    "readonlyRootFilesystem": null,
+    "dockerLabels": null,
+    "systemControls": null,
+    "privileged": null,
+    "name": "SprintbootDemo"
+  }
+],
+"placementConstraints": [],
+"memory": "512",
+"taskRoleArn": "arn:aws:iam::475322830297:role/ecsTaskExecutionRole",
+"compatibilities": [
+  "EC2",
+  "FARGATE"
+],
+"taskDefinitionArn": "arn:aws:ecs:us-east-2:475322830297:task-definition/SpringbootDemoTask:7",
+"family": "SpringbootDemoTask",
+"requiresAttributes": [
+  {
+    "targetId": null,
+    "targetType": null,
+    "value": null,
+    "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+  },
+  {
+    "targetId": null,
+    "targetType": null,
+    "value": null,
+    "name": "ecs.capability.execution-role-awslogs"
+  },
+  {
+    "targetId": null,
+    "targetType": null,
+    "value": null,
+    "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+  },
+  {
+    "targetId": null,
+    "targetType": null,
+    "value": null,
+    "name": "com.amazonaws.ecs.capability.task-iam-role"
+  },
+  {
+    "targetId": null,
+    "targetType": null,
+    "value": null,
+    "name": "ecs.capability.container-health-check"
+  },
+  {
+    "targetId": null,
+    "targetType": null,
+    "value": null,
+    "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+  },
+  {
+    "targetId": null,
+    "targetType": null,
+    "value": null,
+    "name": "ecs.capability.task-eni"
+  },
+  {
+    "targetId": null,
+    "targetType": null,
+    "value": null,
+    "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
+  }
+],
+"pidMode": null,
+"requiresCompatibilities": [
+  "FARGATE"
+],
+"networkMode": "awsvpc",
+"runtimePlatform": {
+  "operatingSystemFamily": "LINUX",
+  "cpuArchitecture": null
+},
+"cpu": "256",
+"revision": 7,
+"status": "ACTIVE",
+"inferenceAccelerators": null,
+"proxyConfiguration": null,
+"volumes": []
+}

@@ -1,0 +1,26 @@
+{
+    "TargetGroups": [
+        {
+            "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-2:475322830297:targetgroup/SprintbootDemoALBTargetGroup/93c98f61f3b30c2d",
+            "TargetGroupName": "SprintbootDemoALBTargetGroup",
+            "Protocol": "HTTP",
+            "Port": 9999,
+            "VpcId": "vpc-03010043918dfa803",
+            "HealthCheckProtocol": "HTTP",
+            "HealthCheckPort": "traffic-port",
+            "HealthCheckEnabled": true,
+            "HealthCheckIntervalSeconds": 120,
+            "HealthCheckTimeoutSeconds": 110,
+            "HealthyThresholdCount": 10,
+            "UnhealthyThresholdCount": 8,
+            "HealthCheckPath": "/actuator/health",
+            "Matcher": {
+                "HttpCode": "200"
+            },
+            "LoadBalancerArns": [],
+            "TargetType": "ip",
+            "ProtocolVersion": "HTTP1",
+            "IpAddressType": "ipv4"
+        }
+    ]
+}
