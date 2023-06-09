@@ -89,9 +89,9 @@ RUN echo '<h1>Hello, welcome to Terraform hands-on demo!</h1>' > /usr/share/ngin
 
 
 
+## Troubleshooting 
 
-
-In case you are trying to pull images from a PUBLIC AWS repository, you must add the following user permissions to your policy:
+In case you are facing `aws ecr-public get-login-password` login issue try add the following user permissions to ECRAdmin user policy:
 
 {
 "Version": "2012-10-17",
